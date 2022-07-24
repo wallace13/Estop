@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:300");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto";
+  font-size: 18px;
+  background-color: #dadefb  !important;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  background-color: #cbdfe9;
+}
+header nav {
+  display: flex;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1180px;
+  height: 70px;
+  line-height: 70px;
+}
+@media (min-width: 768px) {
+  header nav {
+    justify-content: space-between;
+  }
+}
+header nav #collapsible-menu-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 15px;
+  background-image: url("../img/icon_collapsible-menu.svg");
+}
+@media (min-width: 768px) {
+  header nav #collapsible-menu-button {
+    display: none;
+  }
+}
+header nav ul {
+  display: none;
+  list-style-type: none;
+}
+@media (min-width: 768px) {
+  header nav ul {
+    display: flex;
+  }
+}
+header nav ul li {
+  margin: 0 20px;
+}
+header nav ul li:first-of-type {
+  margin-left: 0;
+}
+header nav ul li a {
+  text-decoration: none !important;
+  font-size: 14px;
+  color: black;
+  align-content: space-between;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+header nav ul li a:hover {
+  color: #FFF;
+}
+.box-img{
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+.icon-logo{
+  width:30%;
+  height:50%;
+}
+
+#telaInicial{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url("../img/estacionamento.jpg") center;
+  opacity: 40%;
+}
+#info{
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+  width: 600px;
+  justify-content: end;
+}
+#tituloPrincipal{
+  font-size: 50px;
+}
+#subtituloPrincipal{
+  font-size: 20px;
+}
+
+.containers{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  background-color: #dadefb  !important;
+}
+.titulos{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+#descricao{
+  align-items: center;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media only screen and (min-width: 768px) {
+  .sobre-container {
+    margin: 50px 0px;
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+}
+.sobre{
+  background-color: white;
+  margin: 10px;
+  border-radius: 5%;
+  align-items: center;
+  text-align: center;
+}
+.icon-medium {
+  width: 20%;
+  height: 20%;
+  margin: 5%;
+}
+.sobre h3{
+  margin: 5px;
+}
+.sobre p{
+  margin: 20px;
+  width: 90%;
+  height: 120px;
+  padding: 8px;
+  border-radius: 5%;
+  text-align: justify;
+  font-style:italic;
+  font-size: 15px;
+}
+.carousel{
+  width: 50%;
+  position: absolute !important;
+}
+.carousel #subtitulo{
+  background: rgba(5, 110, 136, 0.336);
+  color: black;
+}
+.fundopc{
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 450px;
+}
+#pc{
+  width: 68%;
+}
+
+#perfil{
+  border-radius: 50%;
+  filter: grayscale(30%);
+}
+@media only screen and (min-width: 768px) {
+  .desenvolvedor-container {
+    margin: 50px 0px;
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+.desenvolvedor{
+  background-color: white;
+  margin: 10px;
+  border-radius: 5%;
+  align-items: center;
+  text-align: center;
+}
+.desenvolvedor h3{
+  margin: 5px;
+}
+.desenvolvedor p{
+  margin: 20px;
+  width: 90%;
+  border-radius: 5%;
+  text-align: justify;
+  font-style:italic;
+  font-size: 15px;
+  padding: 5px;
+  text-align: center;
+}
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon {
+  width: 40%;
+  height: 30%;
+  margin: 5%;
+}
+
+@media (max-device-width: 900px) {
+  body{
+    background-color: #dadefb !important;
+    width: auto;
+  }
+  .box-img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+  }
+  .icon-logo{
+    height: 30%;
+  }
+  #telaInicial{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background: url("../img/estacionamento2.png") center;
+    opacity: 40%;
+  }
+  #info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+  }
+  #tituloPrincipal{
+    font-size: 30px;
+  }
+  #subtituloPrincipal{
+    font-size: 12px;
+  }
+}
+
+footer nav {
+  position: fixed;
+  top: 65px;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-color: white;
+  transition: 0.2s;
+}
+@media (min-width: 768px) {
+  footer nav {
+    display: none;
+  }
+}
+footer nav ul {
+  flex-direction: column;
+  list-style-type: none;
+}
+footer nav ul li {
+  margin: 20px;
+  text-align: left;
+}
+footer nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+footer nav ul li a:hover {
+  color: #FFF;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+}
+footer div a {
+  display: block;
+  margin: 50px 10px;
+  font-size: 0;
+}
+.menu-active {
+  left: 0;
+}
