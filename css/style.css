@@ -266,6 +266,32 @@ header nav ul li a:hover {
   #subtituloPrincipal{
     font-size: 12px;
   }
+   .carousel{
+    width: auto;
+    top: 10% !important;
+    position: absolute !important;
+  }
+  .fundopc img{
+    display: none;
+  }
+  .carousel-caption{
+    width: 100%;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+  }
+  .carousel #subtitulo{
+    background: #eeeeee;
+    color: black;
+    margin-bottom: 0;
+  }
+  .desenvolvedor{
+    margin: 15px;
+  }
+  .desenvolvedor-container {
+    padding-bottom: 10px;
+  }
 }
 
 footer nav {
